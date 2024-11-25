@@ -1,0 +1,138 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Заголовки */
+h1, h2 {
+    color: #333;
+}
+
+/* Контейнер форми та результатів */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* Контейнер форми */
+#form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 320px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для елементів результатів */
+#result-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 320px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+    color: #333;
+    font-size: 1rem;
+    white-space: pre-wrap;
+}
+
+/* Стилі для форми */
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Стиль для елементів форми */
+label {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Вхідні поля */
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+input:hover {
+    border-color: #007bff;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input.error {
+    border: 2px solid red;
+}
+
+/* Кнопки */
+button {
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Стилі для підсвічених елементів */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+/* Основний стиль таблиці */
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 320px;
+    height: 320px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Стиль для комірок */
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Зміна кольору на наведення */
+td:hover {
+    background-color: #f0f0f0;
+    color: #007bff;
+}
+
+

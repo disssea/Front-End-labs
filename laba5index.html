@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Перевірка форми та таблиця</title>
+  <link rel="stylesheet" href="laba5style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="form-container">
+            <h1>Форма перевірки</h1>
+            <form id="form">
+            <h3>ПІБ</h3> 
+                <input type="text" id="fullName" placeholder="ТТТТТТ Т.Т.">
+            <h3>Телефон</h3>
+                <input type="text" id="phone" placeholder="(ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧ">
+            <h3>ID-карта</h3>
+                <input type="text" id="idCard" placeholder="ТТ №ЧЧЧЧЧЧ">
+            <h3>Дата народження</h3>
+                <input type="text" id="birthDate" placeholder="ЧЧ.ЧЧ.ЧЧЧЧ">
+            <h3>E-mail</h3>
+                <input type="text" id="email" placeholder="тттттт@ттттт.com">
+            </form>
+            <button type="button" onclick="validateForm()">Перевірити</button>
+        </div>
+        <div id="result-container">
+            <h1>Результат</h1>
+            <div id="result"></div>
+        </div>
+     </div>
+
+    <h2>Таблиця</h2>
+    <table id="table"></table>
+    <input type="color" id="colorPicker" value="#ff0000" style="margin-top: 10px;">
+
+  <script src="laba5script.js"></script>
+</body>
+</html>
