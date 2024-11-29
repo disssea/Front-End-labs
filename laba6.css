@@ -1,0 +1,41 @@
+body{
+    background-color: #1a1a1af0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#header{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+#load-users{
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #292929;
+    box-shadow: 0 0px 5px #031d48 ;
+    border: solid black 0px;
+    color: #faf5e9;
+    font-size: large;
+
+}
+#user-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.user-card {
+    background-color:  #292929 ;
+    text-align: center;
+    color: #faf5e9;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 0px 15px #031d48 ;
+}
+.user-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
