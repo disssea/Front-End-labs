@@ -1,0 +1,475 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#first-page-container, #third-page-container, #fourth-page-container, #fifth-page-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFF0; /* Світло-бежевий */
+}
+
+#header-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 1px solid gray;
+}
+
+
+.btn-container-head {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 50%;
+}
+
+.btn-head {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    border: 0;
+    border-left: 1px solid gray;
+}
+
+#main-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#circle {
+    width: 140vmin;
+    height: 140vmin;
+    background-color: #d4af37; /* Золотистий */
+    border-radius: 50%;
+    position: absolute;
+    left: 65%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.profile-image {
+    width: 40%;
+    height: auto;
+    top: 5%;
+    position: relative;
+    left: -15%;
+    z-index: 1;
+}
+
+.text-container {
+    top: -40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    width: 600px;
+}
+
+
+
+
+
+#second-page-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/5cbcd0789b8fe83b892ab49c/1605305487206-RU5YVB5UYHZX36WOB0TP/image-asset.jpeg);
+    background-size: cover; /* Забезпечує, щоб фон заповнював весь контейнер */
+    background-position: center; /* Центрує зображення */
+    background-repeat: no-repeat; /* Забороняє повторювати фон */
+    z-index: 5;
+    display: flex; /* Використовує flex для вирівнювання */
+    justify-content: center; /* Вирівнювання по горизонталі */
+    align-items: center; /* Вирівнювання по вертикалі */
+}
+
+.info-container {
+    width: 50%;
+    height: 90%;
+    background-color: #f5f5f5dc;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Вирівнює вміст усередині контейнера вертикально */
+    align-items: center; /* Вирівнює вміст усередині контейнера горизонтально */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Додає тінь для стилю */
+}
+ .info-container .text-container{
+    height: 100%;
+    justify-content: center;
+}
+
+.progres-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    width: 100%;
+    max-width: 500px;
+    margin: 25px 50px 25px 50px;
+  }
+
+  .progress-bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    border: 1px solid #d4af37;
+    height: 10px;
+  }
+
+  .progress {
+    height: 100%;
+    width: 0%;
+    background-color: #d4af37;
+    border-radius: 10px;
+  }
+
+  .progres-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Вирівнюємо по лівому краю */
+}
+#third-page-container, #fifth-page-container {
+    align-items: center;
+}
+
+  #experience{
+    width: 80%; /* Ширина контейнера */
+    height: auto; /* Висота контейнера - 30% від висоти батьківського */
+    background-color: #d4af37; /* Золотистий фон */
+    display: flex;
+    flex-direction: row; /* Елементи розташовуються горизонтально */
+    align-items: center;
+    justify-content: space-between; /* Простір між дочірніми елементами */
+
+  }
+
+  #select{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 50px;
+  }
+
+  #info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+    padding:20px 20px 20px 20px;
+    background-color: #FFFFF0;
+    height: 100%;
+    width: 70%;
+    z-index: 6;
+    
+  }
+
+  #pointer{
+    position: absolute;
+    z-index: -1;
+
+    width: 10px;
+    height: 10px;
+    background-color: #FFFFF0;
+    rotate: 45deg;
+    left: -5px;
+    top: 40px;
+
+  }
+
+  #third-page-container .info-container, #fifth-page-container .info-container{
+    background-color: #f5f5f500;
+    border-radius: 5%;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2); 
+
+  }
+
+  #fifth-page-container .info-container{
+    height: 40%;
+    justify-content: space-evenly;
+  }
+
+
+.head{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.info-container .head h4{
+    margin: 0;
+    padding: 0;
+}
+
+.head img{
+
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+
+}
+
+.head p{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+}
+
+
+
+#container {
+    width: 100%;
+    height: 100%;
+    background-color: #d4af37;
+    display: flex; /* Використовуємо flexbox */
+    flex-direction: row; /* Розташовуємо текст і зображення в ряд */
+   justify-content: right;
+   align-items: center;
+    position: relative; /* Позиціонуємо зображення */
+  }
+  
+  #container img {
+    width: 800px;
+    height: 533px;
+    position: absolute; /* Встановлюємо абсолютне позиціонування */
+    bottom: 0; /* Вирівнюємо зображення по нижньому краю контейнера */
+    left: 0; /* Розташовуємо зображення праворуч */
+  }
+  
+  #container p {
+    margin-right: 25px;
+    max-width: 100%; /* Обмежуємо ширину тексту */
+    text-align: center; /* Вирівнюємо текст по центру */
+    color: #333333; /* Темно-сірий */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+  }
+  
+  .container .text-container p{
+    margin-right: 50px;
+  }
+
+#img-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#img-container img{
+    width: 300px;
+    height: 300px;
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    #circle {
+        width: 100vmin;
+        height: 100vmin;
+        left: 65%;
+        top: 50%;
+    }
+
+    .text-container {
+        width: 500px;
+    }
+    
+    #third-page-container .info-container{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+ 
+    
+    
+    
+}
+
+@media (max-width: 1000px) {
+    #circle {
+        width: 85vmin;
+        height: 85vmin;
+        left: 65%;
+        top: 50%;
+    }
+    #third-page-container .info-container{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .profile-image{
+        top: 15%;
+    }
+
+    #container img {
+        width: 600px;
+        height: 400px;
+        position: absolute; /* Встановлюємо абсолютне позиціонування */
+        bottom: 0; /* Вирівнюємо зображення по нижньому краю контейнера */
+        left: 0; /* Розташовуємо зображення праворуч */
+      }
+      .text-container {
+        width: 400px;
+    }
+
+    .progres-container{
+        width: 70%;
+    }
+    
+}
+
+/* Загальний стиль для мобільних пристроїв (ширина до 768px) */
+@media (max-width: 768px) {
+/* Стиль для десктопу (залишається без змін) */
+#header-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 1px solid gray;
+}
+
+.btn-container-head {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 50%;
+}
+
+.btn-head {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    border: 0;
+    border-left: 1px solid gray;
+}
+
+#logo {
+    font-family: system-ui;
+    font-size: 42px;
+    padding-left: 75px;
+    height: 100%;
+    width: 50%;
+    margin: 0px;
+    color: #333333; /* Темно-сірий */
+    font-weight: bold;
+}
+
+/* Адаптивний стиль для ширини 768px і менше */
+
+    #header-container {
+        flex-direction: column; /* Елементи розташовуються вертикально */
+        align-items: center;
+        border-bottom: none; /* Прибираємо лінію для мобільного вигляду */
+    }
+
+    #logo {
+        font-size: 32px; /* Зменшуємо розмір шрифту логотипа */
+        padding-left: 0; /* Забираємо відступи зліва */
+        text-align: center;
+        width: 100%; /* Логотип займає всю ширину */
+        height: auto; /* Висота адаптується до тексту */
+        margin-bottom: 10px; /* Додаємо відступ між логотипом і кнопками */
+    }
+
+    .btn-container-head {
+        flex-direction: row; /* Кнопки розташовуються вертикально */
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* Розтягуємо контейнер кнопок на всю ширину */
+        gap: 10px; /* Додаємо відступи між кнопками */
+    }
+
+    .btn-head {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        height: 100%;
+        border: 0;
+        border-left: 1px solid gray;
+    }
+
+    #circle {
+        width: 85vmin;
+        height: 85vmin;
+        left: 50%;
+        top: 60%;
+    }
+
+    #main-container .text-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        top: 35px;
+        width: 80%;
+    }
+    #main-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #container img {
+        width: 100%;
+        height: auto;
+      }
+
+      .profile-image {
+        width: 60%;
+        height: auto;
+        top: 5%;
+        position: relative;
+        left: 0%;
+        z-index: 1;
+    }
+
+    .info-container {
+        width: 65%;
+    }
+
+    .info-container .text-container{
+        width: 75%;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    #container .text-container{
+        top: 25px;
+        width: 100%;
+    }
+    
+}

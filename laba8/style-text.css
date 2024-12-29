@@ -1,0 +1,200 @@
+#vdad {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 64px;
+    margin-left: 75px;
+    color: #333333; /* Темно-сірий */
+    text-align: left;
+    font-weight: 400;
+}
+
+#hi {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+  margin-left: 75px;
+    font-size: 40px;
+    font-weight:lighter;
+    color: rgb(72, 72, 72);
+}
+
+
+
+#logo {
+   font-family: system-ui;
+   font-size: 42px;
+    padding-left: 75px;
+    height: 100%;
+    width: 50%;
+    margin: 0px;
+    color: #333333; /* Темно-сірий */
+    font-weight: bold;
+}
+
+.btn-head{
+  color: #333333;
+  font-weight: 500;
+  font-size: medium;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ .text-container h3{
+ 
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   
+    color: #d4af37;
+    margin-top: 75px;
+  }
+
+  #download{
+    margin-top: 25px;
+    padding: 2%;
+    background-color: #d4af37;
+    border-radius: 10px;
+    color: #FFFFF0;
+    cursor: pointer;
+  }
+
+
+  h4 {
+    margin: 0 0 5px 0; /* Відступи між текстом і прогрес-баром */
+    font-size: 14px;
+  }
+h3{
+    margin: 0;
+}
+
+.info-container h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  color: rgb(72, 72, 72);
+  margin-top: 20px;
+}
+
+#second-page-container .info-container p{
+  
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  color: rgb(72, 72, 72);
+  padding: 10px;
+}
+#select h3{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color: #FFFFF0;
+  font-weight: 600;
+}
+#info p{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(72, 72, 72);
+  font-size: small;
+}
+
+p{
+  margin: 0;
+}
+
+#third-page-container h2, #fifth-page-container h2{
+  font-weight: 500;
+  font-size: 32px;
+ color: #d4af37;
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.info-exp h5{
+  color: rgb(72, 72, 72);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+.info-exp p{
+  margin-top: 5px;
+  color: #333333; /* Темно-сірий */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  font-size: small;
+}
+.info-exp{
+  margin-bottom: 10px;
+}
+
+.head h4{
+  color: #333333; /* Темно-сірий */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+ 
+  #vdad {
+        font-size: 50px;
+  }
+
+  #hi {
+
+      font-size: 25px;
+
+  }
+  #logo{
+    font-size: 40px;
+  }
+  
+  
+    
+
+  
+}
+
+
+@media (max-width: 1000px) {
+
+  #vdad {
+    font-size: 30px;
+    margin-left: 40px;
+}
+
+#hi {
+
+  font-size: 20px;
+  margin-left: 40px;
+
+}
+#logo{
+  font-size: 30px;
+}
+
+.info-container h2{
+  font-size: 20px;
+}
+
+}
+@media (max-width: 768px) {
+  
+  #logo {
+padding-left: 0px;
+}
+
+#hi {
+
+  margin-top: 20px;
+  margin-left: 0px;
+
+
+}
+
+#vdad {
+
+  margin-left: 0px;
+}
+
+.info-container p{
+
+  width: 90%;
+  font-size: 14px;
+}
+
+
+}
